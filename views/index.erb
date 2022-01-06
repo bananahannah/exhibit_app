@@ -1,0 +1,15 @@
+<h1>exhibit.</h1>
+<div class = "main_container">
+    <% all_work.each do |work| %>
+
+        <h2> 
+            <a href="/work/<%=work['id']%>">
+            <%= work['name'] %> 
+            </a>
+        </h2>
+
+    <img src="<%= work['image_url']%>" alt="<%=work['name']%>" srcset="">
+    
+
+    <% end %>
+</div>
