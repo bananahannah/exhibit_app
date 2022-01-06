@@ -9,18 +9,20 @@ end
 
 
 def all_work()
-    db_query('select * from work;') 
+    sql = "select * from work;"
+    db_query(sql, [name, year, image_url, description, medium]) 
 end
   
   
 def add_work(name, year, image_url, description, medium) 
-    sql = "insert into work (name, year, image_url, description, medium) values ($1, $2, $3, $4, $5)"  
+    sql = "insert into work (name, year, image_url, description, medium) values ($1, $2, $3, $4, $5)"
     db_query(sql, [name, year, image_url, description, medium])
 end
   
   
 def delete_work(id)
-    db_query("delete from dishes where id = $1;", [id])
+    sql = "delete from dishes where id = $1;"
+    db_query(sql, [id])
 end
   
 
@@ -29,25 +31,25 @@ def update_work(name, year, image_url, description, medium)
     db_query(sql, [name, year, image_url, description, medium])
 end
 
-def logged_in?()
-    if session[:user_id] 
-      return true 
-    else
-      return false
-    end 
-end
+# def logged_in?()
+#     if session[:user_id] 
+#       return true 
+#     else
+#       return false
+#     end 
+# end
   
-def password_correct?(password, result)
-    result.count > 0 && BCrypt::Password.new(result[0]['password_digest']) == password
-end
+# def password_correct?(password, result)
+#     result.count > 0 && BCrypt::Password.new(result[0]['password_digest']) == password
+# end
   
   
-def current_user() 
+# def current_user() 
   
-    sql = "select * from users where id = #{ session[:user_id]};" #this isn't user input so its safe (we only use exec_params for user input)
+#     sql = "select * from users where id = #{ session[:user_id]};" #this isn't user input so its safe (we only use exec_params for user input)
   
-    user = db_query(sql).first
-    return OpenStruct.new(user)
+#     user = db_query(sql).first
+#     return OpenStruct.new(user)
   
-end
+# end
   
