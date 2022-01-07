@@ -1,24 +1,51 @@
+<% if logged_in? %>
 
-<h1>Update <%= work['id'] %> Information</h1>
+<div class = "edit_form">
+<h1>Update <%= work['name'] %> Information</h1>
+  <form action="/work<%= work ['id'] %>" method="post" class="edit_work">
+      <input type="hidden" name="_method" value="put">
 
-<form action="/work/<%= work ['id'] %>/edit" method="post">
-  <input type="hidden" name="_method" value="put">
+      <label for="">Name</label>
+      <input type="text" name="name" value="<%= work['name'] %>">
 
-  <label for="">Name</label>
-  <input type="text" name="name" value="<%= work['name'] %>">
+      <label for="">Year</label>
+      <input type="text" name="year" placeholder="http://...." value="<%= work['year'] %>">
 
-  <label for="">Year</label>
-  <input type="url" name="image_url" placeholder="http://...." value="<%= work['year'] %>">
+      <label for="">Image Link</label>
+      <input type="url" name="image" value="<%= work['image_url'] %>">
 
-   <label for="">Image_URL</label>
-  <input type="text" name="name" value="<%= work['image_url'] %>">
+      <label for="">Description</label>
+      <input type="text" name="description" placeholder="http://...." value="<%= work['description'] %>">
 
-  <label for="">Description</label>
-  <input type="url" name="image_url" placeholder="http://...." value="<%= work['description'] %>">
+      <label for="">Medium</label>
+      <input type="text" name="medium" value="<%= work['medium'] %>">
 
-   <label for="">Medium</label>
-  <input type="text" name="name" value="<%= work['medium'] %>">
+      <label for="">Designer or Studio</label>
+      <input type="text" name="designer" value="<%= work['designer'] %>">
 
-  <button>Update</button>
+      <button class="update_btn">Update</button>
+</div>
 
 </form> 
+
+<% else %>
+<label for="">Name</label>
+      <input type="text" name="name" value="<%= work['name'] %>">
+
+      <label for="">Year</label>
+      <input type="text" name="year" placeholder="" value="<%= work['year'] %>">
+
+      <label for="">Image Link</label>
+      <input type="url" name="image" value="<%= work['image_url'] %>">
+
+      <label for="">Description</label>
+      <input type="text" name="description" value="<%= work['description'] %>">
+
+      <label for="">Medium</label>
+      <input type="text" name="medium" value="<%= work['medium'] %>">
+
+      <label for="">Designer or Studio</label>
+      <input type="text" name="designer" value="<%= work['designer'] %>">
+<% redirect to '/login'%>
+
+<%end%>

@@ -28,3 +28,4 @@ insert into
 work (name, year, image_url, description, medium) 
 values ('through the lens.', '2018', 'https://i.imgur.com/a2rapxC.jpg','Photography print design book','Print, Adobe Suite');
 
+alter table work add column designer text;

@@ -1,25 +1,31 @@
 <h1>Add to your folio</h1>
+<div class = "new-work-photo">
+    <div class = "new_work_form">
+        <div class = "image-holder">
+            <form action="/work" method="post" class = "new_work">
 
+                <label for="">Name</label>
+                <input type="text" name="name">
+                <br>
+                <label for="">Year</label>
+                <input type="text" name="year">
+                <br>
+                <label for="">Image</label>
+                <input type="url" name="image_url" placeholder="">
+                <br>
+                <label for="">Description</label>
+                <input type="text" name="description">
+                <br>    
+                <label for="">Medium</label>
+                <input type="text" name="medium">
+                <br>
+                <label for="">Designer</label>
+                <input type="text" name="designer">
 
-<form action="/work/new" method="post">
+                
+                <button class = "submit_btn">Submit</button> 
 
-    <label for="">Name</label>
-    <input type="text" name="name">
-
-    <label for="">Year</label>
-    <input type="text" name="diameter">
-
-    <label for="">Image</label>
-    <input type="url" name="image_url" placeholder="">
-
-    <label for="">Description</label>
-    <input type="text" name="mass">
-
-    <label for="">Medium</label>
-    <input type="number" name="moon_count">
-
-    
-
-    <button>Submit</button> 
-
-</form>
+            </form>
+        </div>
+    </div>
+</div>

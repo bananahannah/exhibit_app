@@ -7,14 +7,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <nav> 
 
-  	<div class = "nav_link"><a href="/new">Create</a></div>
-    <div class = "nav_link"><a href="/">Explore</a></div>
-    <button class = "nav_btn"><a href="/">Register</a></button>
-    <button class = "nav_btn"><a href="/">Login</a></button>
+ <% if  logged_in? %>
 
-  </nav>
+  logged in as <%= current_user.email %>
+
+    <form action="/session" method = "post">
+      <input type="hidden" name = "_method" value = "delete">
+      <div class="topnav">
+    
+      <div class="logo">
+        <a href="#"><img class = "topnav_logo" src="https://i.imgur.com/rUQ0fc7.png" alt="logo"></a>
+      <button class = "nav_btn"><a href="/login">Logout</a></button>
+      <a class="active" href="/">Home</a>
+      <a href="/work">Create</a>
+      </div>
+    </div>
+    </form>
+    <%# we need to delete the session by logging out, so we need to use a delete request  %>
+
+    <% else %>
+
+    <div class="topnav">
+    
+      <div class="logo">
+        <a href="#"><img class = "topnav_logo" src="https://i.imgur.com/rUQ0fc7.png" alt="logo"></a>
+  
+      <button class = "nav_btn"><a href="/work/new_user">Register</a></button>
+      <button class = "nav_btn"><a href="/login">Login</a></button>
+      <a class="active" href="/">Home</a>
+      </div>
+    </div>
+
+    
+
+  <% end %>
+
   <%= yield %>
 
 </body>

@@ -1,14 +1,12 @@
-<h1>exhibit.</h1>
-
 <h2> <%= work['name'] %> </h2>
 
-<img src="<%= work['image_url']%>" alt="<%= work['name']%>" srcset="">
+<img class= "work_info_image" src="<%= work['image_url']%>" alt="<%= work['name']%>" srcset="">
 
 <div>
 
     <p>Name: <%= work['name'] %></p> 
+    <p>Designer: <%= work['designer'] %></p> 
     <p>Year: <%= work['year'] %></p> 
-    <p>Image: <%= work['image_url'] %></p> 
     <p>Description: <%= work['description'] %></p> 
     <p>Medium: <%= work['medium'] %></p> 
 
