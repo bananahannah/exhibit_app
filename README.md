@@ -2,25 +2,30 @@
 
 **Xhibit** gives designers a place to start building their online portfolios. Users can create an account, add their projects which will then be showcased on the homepage of the website. Once logged in, users can edit and update their projects with new images, descriptions and names. 
 
-
+<br> 
+<br>
 
 # TAKE A LOOK 👀
 
 You can see the Xhibit app here (link goes here)
 
-
+<br> 
+<br>
 
 # HOW IT WORKS 🛠
 
 Users start at the homepage where they can see projects from other designers. They navigate to register an account, and once they've done that they will be given the option to create a new project. The user can edit and remove projects as they please.
 
 
+<br> 
+<br>
 
 # WHAT I USED 👩🏻‍💻
 
 This project was built using Ruby & erb
 
-
+<br> 
+<br>
 
 # CHALLENGES
 This is my first app built with Ruby so wrapping my head around routes vs links was a bit of a challenge, but here's a list of some more challenges I faced! Yay!
