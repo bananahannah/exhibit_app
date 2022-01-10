@@ -36,7 +36,7 @@ Pages:
 
 
 ## Wireframe: 
-You can see my initial plan [here](https://imgur.com/O9Rbod0) 
+You can see my initial plan [here](https://i.imgur.com/O9Rbod0.jpg) 
 
 
 # FEATURES TO BE ADDED 🤦🏻‍♀️
