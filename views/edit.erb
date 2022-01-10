@@ -1,51 +1,35 @@
 <% if logged_in? %>
 
 <div class = "edit_form">
-<h1>Update <%= work['name'] %> Information</h1>
-  <form action="/work<%= work ['id'] %>" method="post" class="edit_work">
-      <input type="hidden" name="_method" value="put">
+      <h1>Update <%= work['name'] %> Information</h1>
+            <form action="/work/<%= work ['id'] %>" method="post" class="edit_work">
+            <input type="hidden" name="_method" value="put">
 
-      <label for="">Name</label>
-      <input type="text" name="name" value="<%= work['name'] %>">
+            <label for="">Name</label>
+            <input type="text" name="name" value="<%= work['name'] %>">
 
-      <label for="">Year</label>
-      <input type="text" name="year" placeholder="http://...." value="<%= work['year'] %>">
+            <label for="">Year</label>
+            <input type="text" name="year" value="<%= work['year'] %>">
 
-      <label for="">Image Link</label>
-      <input type="url" name="image" value="<%= work['image_url'] %>">
+            <label for="">Image Link</label>
+            <input type="url" name="image_url" value="<%= work['image_url'] %>">
 
-      <label for="">Description</label>
-      <input type="text" name="description" placeholder="http://...." value="<%= work['description'] %>">
+            <label for="">Description</label>
+            <input type="text" name="description" value="<%= work['description'] %>">
 
-      <label for="">Medium</label>
-      <input type="text" name="medium" value="<%= work['medium'] %>">
+            <label for="">Medium</label>
+            <input type="text" name="medium" value="<%= work['medium'] %>">
 
-      <label for="">Designer or Studio</label>
-      <input type="text" name="designer" value="<%= work['designer'] %>">
+            <label for="">Designer or Studio</label>
+            <input type="text" name="designer" value="<%= work['designer'] %>">
 
-      <button class="update_btn">Update</button>
+            <button class="update_btn">Update</button>
+      </form> 
 </div>
 
-</form> 
 
 <% else %>
-<label for="">Name</label>
-      <input type="text" name="name" value="<%= work['name'] %>">
 
-      <label for="">Year</label>
-      <input type="text" name="year" placeholder="" value="<%= work['year'] %>">
-
-      <label for="">Image Link</label>
-      <input type="url" name="image" value="<%= work['image_url'] %>">
-
-      <label for="">Description</label>
-      <input type="text" name="description" value="<%= work['description'] %>">
-
-      <label for="">Medium</label>
-      <input type="text" name="medium" value="<%= work['medium'] %>">
-
-      <label for="">Designer or Studio</label>
-      <input type="text" name="designer" value="<%= work['designer'] %>">
-<% redirect to '/login'%>
+      <% redirect to '/login'%>
 
 <%end%>

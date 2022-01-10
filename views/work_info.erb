@@ -1,27 +1,28 @@
-<h2> <%= work['name'] %> </h2>
+<div class = "form_container">
+    <h2> <%= work['name'] %> </h2>
 
-<img class= "work_info_image" src="<%= work['image_url']%>" alt="<%= work['name']%>" srcset="">
+    <img class= "work_info_image" src="<%= work['image_url']%>" alt="<%= work['name']%>" srcset="">
 
-<div>
+    <div class = "work_information">
 
-    <p>Name: <%= work['name'] %></p> 
-    <p>Designer: <%= work['designer'] %></p> 
-    <p>Year: <%= work['year'] %></p> 
-    <p>Description: <%= work['description'] %></p> 
-    <p>Medium: <%= work['medium'] %></p> 
+        <p>Name: <%= work['name'] %></p> 
+        <p>Designer: <%= work['designer'] %></p> 
+        <p>Year: <%= work['year'] %></p> 
+        <p>Description: <%= work['description'] %></p> 
+        <p>Medium: <%= work['medium'] %></p> 
 
-</div>
+    </div>
 
 
 <div class = "edit_delete_container">
+            <button class = "delete_btn">
+                 <a href="/work/<%= work['id'] %>/delete" class = "edit_data_font">Remove from Folio</a><form action="/work/<%= work['id']%>/delete" method="post">
+                <input type="hidden" name="_method" value="delete">
+            </button>
+        </form>
 
-    <form action="/work/<%= work['id'] %>" method="post">
-        <input type="hidden" name="_method" value="delete">
-        <button class = "delete_btn">Remove from Folio</button>
-    </form>
-
-    <button class = "edit_btn">
-        <a href="/work/<%= work['id'] %>/edit" class = "edit_data_font">Edit <%= work['name']%></a>
-    </button>
-
+        <button class = "edit_btn">
+            <a href="/work/<%= work['id'] %>/edit" class = "edit_data_font">Edit <%= work['name']%></a>
+        </button>
+    </div>
 </div>

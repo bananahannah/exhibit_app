@@ -1,40 +1,48 @@
+@font-face {
+  font-family: Acumin;
+  src: url(Acumin-BdPro.OTF);
+}
+
 img {
-    height: 200px;
-    width: 300px;
+    height: 270px;
+    width: 400px;
 }
 
 h1 {
-    font-family: 'TT Norms', sans-serif;
+    font-family: 'Acumin', sans-serif;
 }
 
 h2 {
-    font-family: 'TT Norms', sans-serif;
-    font-weight: 400;
+    font-family: 'Acumin', sans-serif;
+    font-weight: 700;
     text-decoration: none;
     font-size: 18px;
+    text-align: left;
 }
 
 a {
-    font-family: 'TT Norms', sans-serif;
+    font-family: 'Acumin', sans-serif;
+    font-weight: 700;
     text-decoration: none;
+    color: black;
 }
 
 p {
-  font-family: 'TT Norms', sans-serif;
+  font-family: 'Acumin', sans-serif;
 }
 
 label {
-  font-family: 'TT Norms', sans-serif;
+  font-family: 'Acumin', sans-serif;
 }
 
 .main_container {
-    margin: auto;
-    width: 60%;
+    margin: 0 auto;
     display: grid;
-    padding: 50px;
+    padding-top: 80px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-gap: 15px;
+    column-gap: 5px;
 }
 
 
@@ -42,70 +50,15 @@ label {
     display: inline;
 }
 
-.nav_btn > a {
-    font-family: 'TT Norms', sans-serif;
-    display: inline;
-    text-decoration: none;
-    color: black;
-    text-align: center;
-}
-
-
 .topnav {
-    background-color: white;
-    overflow: hidden;
-    text-align: center;
+  background-color: white;
+  overflow: hidden;
+  text-align: center;
   }
-
 
 .container{
     clear:both;
     overflow:auto;
-}
-  
-nav{
-  float:right;
-}
-
-.logo img{
-  float:left;
-  height: 33px;
-  width: 142px;
-  padding-right: 975px;
-}
-  
-
-/* Style the links inside the navigation bar */
-.topnav a {
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: 'TT Norms', sans-serif;
-}
-
-.topnav button {
-    float: right;
-    color: black;
-    text-align: center;
-    width: 100px;
-    height: 40px;
-    border-radius: 100px;
-    background-color: #0cffb3;
-    border-style: none;
-}
-  
-/* Change the color of links on hover */
-.topnav a:hover {
-    text-decoration: underline;
-    color: #0cffb3;
-}
-  
-/* Add a color to the active/current link */
-.topnav a.active {
-    color: black;
-    font-family: 'TT Norms', sans-serif;
 }
 
 .work_info_image {
@@ -140,18 +93,6 @@ input[type=url] {
   border: solid 1px black;
 }
 
-.login_btn {
-    float: right;
-    color: black;
-    text-align: center;
-    width: 100px;
-    height: 40px;
-    border-radius: 100px;
-    background-color: #0cffb3;
-    border-style: none;
-    display: inline-block;
-    margin: 0 auto;
-}
 
 .update_btn {
   float: left;
@@ -169,12 +110,9 @@ input[type=url] {
 .register_form {
   display: block;
   text-align: center;
-  background-color: #f4f4f4;
   width: 700px;
   height: 700px;
   margin: 0 auto;
-  background: url(https://images.unsplash.com/photo-1517021818302-9b520a06c834?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
-  background-size: cover
 }
 
 .register {
@@ -192,8 +130,6 @@ input[type=url] {
   width: 700px;
   height: 700px;
   margin: 0 auto;
-  background: url(https://images.unsplash.com/photo-1517021818302-9b520a06c834?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
-  background-size: cover
 }
 
 .login {
@@ -206,28 +142,25 @@ input[type=url] {
 
 .edit_form {
   display: block;
-  text-align: center;
+  text-align: left;
   width: 700px;
   height: 700px;
   margin: 0 auto;
 }
+
 .edit_work {
   display: inline-block;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
-  padding: 60px;
 }
 
 .new_work_form {
   display: block;
-  text-align: center;
-  background-color: #f4f4f4;
-  width: 700px;
-  height: 700px;
+  text-align: left;
+  width: 1000px;
+  height: 1000px;
   margin: 0 auto;
-  background: url(https://images.unsplash.com/photo-1517021818302-9b520a06c834?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
-  background-size: cover
 }
 
 .new_work {
@@ -235,7 +168,7 @@ input[type=url] {
   text-align: left;
   margin-left: auto;
   margin-right: auto;
-  padding: 50px;
+  width: 1000px;
 }
 
 .submit_btn {
@@ -249,10 +182,116 @@ input[type=url] {
     border-style: none;
 }
 
-.new-work-photo {
-  padding: 80px 0
+.delete_btn {
+  float: left;
+    color: black;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #0cffb3;
+    border-style: none;
+    padding: 5px;
 }
 
-.login-photo {
-  padding: 80px 0
+.edit_btn {
+  float: left;
+    color: black;
+    text-align: center;
+    width: 400px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #0cffb3;
+    border-style: none;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.edit_delete_container {
+  float: left;
+  text-align: center;
+}
+
+.form_container {
+  display: block;
+  text-align: center;
+  width: 1000px;
+  height: 1000px;
+  margin: 0 auto;
+}
+
+.work_information {
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: clear;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #0cffb3;
+  border-radius: 100px;
+  text-decoration: underline;
+
+}
+
+.topnav_logo{
+  float:left;
+  height: 40px;
+  width: 142px;
+  padding-right: 60px;
+  background-color: none;
+} 
+
+.topnav_logo:hover{
+  background-color: none;
+} 
+
+.current_user_indication:hover {
+  text-decoration: none;
+  background-color: none;
+
+}
+
+.login_btn {
+    color: black;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #0cffb3;
+    border-style: none;
+}
+
+.logout_btn {
+  color: black;
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  border-radius: 100px;
+  background-color: #0cffb3;
+  border-style: none;
+}
+
+.logout_btn:hover {
+  background-color: none;
+  border-radius: 100px;
+  text-decoration: underline;
+
 }

@@ -1,45 +1,37 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Hello World</title>
-  <link rel='stylesheet' href='/stylesheets/main.css'>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Hello World</title>
+<link rel='stylesheet' href='/stylesheets/main.css'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
- <% if  logged_in? %>
+  <% if  logged_in? %>
 
-  logged in as <%= current_user.email %>
-
+<div class="topnav">
+  <ul>
+    <li><a href="/"><img class = "topnav_logo" src="https://i.imgur.com/w05vFXw.png" alt="logo"></a></li>
+    <li><a href="/"> Home </a></li>
+    <li><a href="work"> Create </a></li>
+    <li><a class = "current_user_indication"> logged in as <%= current_user.email %>  </a></li>
     <form action="/session" method = "post">
-      <input type="hidden" name = "_method" value = "delete">
-      <div class="topnav">
-    
-      <div class="logo">
-        <a href="#"><img class = "topnav_logo" src="https://i.imgur.com/rUQ0fc7.png" alt="logo"></a>
-      <button class = "nav_btn"><a href="/login">Logout</a></button>
-      <a class="active" href="/">Home</a>
-      <a href="/work">Create</a>
-      </div>
-    </div>
+    <input type="hidden" name = "_method" value = "delete">
+    <li><button class = "logout_btn"> Logout </button></li>
     </form>
-    <%# we need to delete the session by logging out, so we need to use a delete request  %>
-
-    <% else %>
-
-    <div class="topnav">
-    
-      <div class="logo">
-        <a href="#"><img class = "topnav_logo" src="https://i.imgur.com/rUQ0fc7.png" alt="logo"></a>
+  </ul>
+</div>
   
-      <button class = "nav_btn"><a href="/work/new_user">Register</a></button>
-      <button class = "nav_btn"><a href="/login">Login</a></button>
-      <a class="active" href="/">Home</a>
-      </div>
-    </div>
+  <% else %>
 
-    
+<ul>
+    <li><a href="/"><img class = "topnav_logo" src="https://i.imgur.com/w05vFXw.png" alt="logo"></a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="work">Create</a></li>
+    <li><button class = "login_btn"><a href="/login">Login</a></li></button>
+</ul>
+
 
   <% end %>
 
