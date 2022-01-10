@@ -1,24 +1,34 @@
-# ABOUT
+# ABOUT 🤓
 
 **Xhibit** gives designers a place to start building their online portfolios. Users can create an account, add their projects which will then be showcased on the homepage of the website. Once logged in, users can edit and update their projects with new images, descriptions and names. 
+
+
 
 # TAKE A LOOK 👀
 
 You can see the Xhibit app here (link goes here)
 
+
+
 # HOW IT WORKS 🛠
 
 Users start at the homepage where they can see projects from other designers. They navigate to register an account, and once they've done that they will be given the option to create a new project. The user can edit and remove projects as they please.
 
+
+
 # WHAT I USED 👩🏻‍💻
 
 This project was built using Ruby & erb
+
+
 
 # CHALLENGES
 This is my first app built with Ruby so wrapping my head around routes vs links was a bit of a challenge, but here's a list of some more challenges I faced! Yay!
 
 - Soooooo many sb_query and sql errors. That ish is hard first time. 
 - You fix one thing, something else breaks! 
+
+
 
 # THE PLANNING 📝
 
@@ -29,8 +39,12 @@ Pages:
 - Create project page & form 
 - Edit & update form 
 
+
+
 ## Wireframe: 
-<a href="https://imgur.com/O9Rbod0 ">Intital planning wireframe</a> 
+You can see my initial plan [here](https://imgur.com/O9Rbod0) 
+
+
 
 # FEATURES TO BE ADDED 🤦🏻‍♀️
 
@@ -40,9 +54,13 @@ Pages:
 - Filtering for work categories
 - Search function
 
+
+
 # BUGS 🦟 🦗 🦟 🦗
 
 - Responsiveness. That needs to be fixed 10000%, please don't come at me I KNOW
+
+
 
 # LESSONS LEARNED 👩🏻‍🏫
 
