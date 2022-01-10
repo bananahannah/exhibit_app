@@ -58,3 +58,5 @@ You can see my initial plan [here](https://i.imgur.com/O9Rbod0.jpg)
 - Better planning. Ideally start the planning a week before you even start. Get everything ready before you even start writing code. 
 
 - Routes and links - two *very* different things 
+
+- More than anything I think I would plan my sql statements and options MUCH better and think about every option first. Now that there's more time I will revisit the planning and add to this prototype app. 
