@@ -1,4 +1,4 @@
-# ABOUT
+# ABOUT 🤓
 
 **Xhibit** gives designers a place to start building their online portfolios. Users can create an account, add their projects which will then be showcased on the homepage of the website. Once logged in, users can edit and update their projects with new images, descriptions and names. 
 
@@ -30,7 +30,7 @@ Pages:
 - Edit & update form 
 
 ## Wireframe: 
-<a href="https://imgur.com/O9Rbod0 ">Intital planning wireframe</a> 
+You can see my intial wireframe[here](https://i.imgur.com/O9Rbod0.jpg)
 
 # FEATURES TO BE ADDED 🤦🏻‍♀️
 
