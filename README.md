@@ -12,7 +12,7 @@ Users start at the homepage where they can see projects from other designers. Th
 
 # WHAT I USED 👩🏻‍💻
 
-This project was built using Ruby & erb
+This project was built using Ruby, HTML & CSS
 
 # CHALLENGES
 This is my first app built with Ruby so wrapping my head around routes vs links was a bit of a challenge, but here's a list of some more challenges I faced! Yay!
@@ -30,7 +30,7 @@ Pages:
 - Edit & update form 
 
 ## Wireframe: 
-You can see my intial wireframe[here](https://i.imgur.com/O9Rbod0.jpg)
+You can see my intial wireframe [here](https://i.imgur.com/O9Rbod0.jpg)
 
 # FEATURES TO BE ADDED 🤦🏻‍♀️
 
