@@ -4,7 +4,7 @@
 
 # TAKE A LOOK 👀
 
-You can see the Xhibit app here (link goes here)
+You can see the Xhibit app [here](https://xhibitapp.herokuapp.com/)
 
 # HOW IT WORKS 🛠
 
